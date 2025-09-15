@@ -59,3 +59,4 @@ Thumbs.db
 # Editor: VS Code / Cursor
 .vscode/
 .cursor/
+.vercel
