@@ -132,9 +132,9 @@ export function GalleryImage({ images }: GalleryImageProps) {
 							className="max-w-full max-h-[80vh] object-contain rounded-lg"
 							onClick={(e) => e.stopPropagation()}
 						/>
-						<p className="text-white text-center mt-4 text-sm sm:text-base">
+						{/* <p className="text-white text-center mt-4 text-sm sm:text-base">
 							{selectedImage.alt}
-						</p>
+						</p> */}
 					</div>
 				</div>
 			)}
