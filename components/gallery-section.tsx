@@ -1,7 +1,7 @@
 import { client } from "@/sanity/lib/client";
 import { GalleryImage } from "./gallery-image";
 
-const GALLERY_IMAGES_QUERY = `*[_type == "galleryImage"] | order(_createdAt desc) {
+const GALLERY_IMAGES_QUERY = `*[_type == "galleryImage" && isVisible == true] | order(_createdAt desc) {
   _id,
   image,
   altText

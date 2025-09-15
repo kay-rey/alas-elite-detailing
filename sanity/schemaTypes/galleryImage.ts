@@ -21,6 +21,13 @@ export const galleryImageType = defineType({
 			description: "Alternative text for accessibility and SEO",
 			validation: (rule) => rule.required().max(125),
 		}),
+		defineField({
+			name: "isVisible",
+			title: "Show on Website",
+			type: "boolean",
+			description: "Toggle to show/hide this image on the website gallery",
+			initialValue: true,
+		}),
 	],
 	preview: {
 		select: {
