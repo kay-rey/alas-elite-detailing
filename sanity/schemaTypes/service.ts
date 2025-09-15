@@ -49,6 +49,13 @@ export const serviceType = defineType({
 			description: "Order in which services appear (lower numbers first)",
 			initialValue: 0,
 		}),
+		defineField({
+			name: "isVisible",
+			title: "Show on Website",
+			type: "boolean",
+			description: "Toggle to show/hide this service on the website",
+			initialValue: true,
+		}),
 	],
 	preview: {
 		select: {

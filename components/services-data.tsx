@@ -1,7 +1,7 @@
 import { client } from "@/sanity/lib/client";
 import { ServicesDisplay } from "./services-display";
 
-const SERVICES_QUERY = `*[_type == "service"] | order(order asc) {
+const SERVICES_QUERY = `*[_type == "service" && isVisible == true] | order(order asc)[0...3] {
   _id,
   title,
   price,
