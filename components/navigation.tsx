@@ -42,8 +42,7 @@ export function Navigation() {
 							/>
 						</div>
 						<div className="text-lg md:text-xl font-bold text-primary transform hover:scale-105 transition-transform duration-200 cursor-pointer">
-							<span className="hidden sm:inline">Alas Elite Detailing</span>
-							<span className="sm:hidden">Alas Elite</span>
+							<span>Alas Elite Detailing</span>
 						</div>
 					</div>
 
