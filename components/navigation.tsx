@@ -97,26 +97,31 @@ export function Navigation() {
 					</div>
 				</div>
 
-				{isMobileMenuOpen && (
-					<div className="md:hidden border-t border-border bg-background/95 backdrop-blur w-full">
-						<div className="px-2 pt-2 pb-3 space-y-1 w-full">
-							<a
-								href="#services"
-								onClick={handleLinkClick}
-								className="block px-3 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-all duration-200"
-							>
-								Services
-							</a>
-							<a
-								href="#gallery"
-								onClick={handleLinkClick}
-								className="block px-3 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-all duration-200"
-							>
-								Gallery
-							</a>
-						</div>
+				{/* Mobile Menu - Always rendered but conditionally visible */}
+				<div
+					className={`md:hidden absolute top-full left-0 right-0 border-t border-border bg-background/95 backdrop-blur w-full transition-all duration-300 ease-in-out ${
+						isMobileMenuOpen
+							? "opacity-100 visible translate-y-0"
+							: "opacity-0 invisible -translate-y-2"
+					}`}
+				>
+					<div className="px-2 pt-2 pb-3 space-y-1 w-full">
+						<a
+							href="#services"
+							onClick={handleLinkClick}
+							className="block px-3 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-all duration-200"
+						>
+							Services
+						</a>
+						<a
+							href="#gallery"
+							onClick={handleLinkClick}
+							className="block px-3 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-all duration-200"
+						>
+							Gallery
+						</a>
 					</div>
-				)}
+				</div>
 			</div>
 		</nav>
 	);
