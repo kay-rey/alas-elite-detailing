@@ -49,7 +49,7 @@ export function ServiceAreaSection() {
           >
             <div className="bg-muted rounded-lg p-4 sm:p-8 text-center transform hover:scale-105 transition-all duration-300 hover:shadow-xl">
               <img
-                src="/scv-map-serving.png"
+                src="/scv-map-serving.webp"
                 alt="Santa Clarita Valley Service Area Map"
                 className="w-full h-48 sm:h-64 object-cover rounded-lg mb-4 transition-all duration-300 hover:brightness-110"
               />
