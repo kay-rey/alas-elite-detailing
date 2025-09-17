@@ -66,6 +66,9 @@ export function Footer() {
           <p className="text-muted-foreground text-sm sm:text-base">
             © 2024 Alas Elite Detailing. All rights reserved.
           </p>
+          <p className="text-muted-foreground text-sm sm:text-base">
+            <a href="https://kevbreyes.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-all duration-200 transform hover:scale-105">Made by 🐨</a>
+          </p>
         </div>
       </div>
     </footer>
