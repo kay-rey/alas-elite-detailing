@@ -51,7 +51,7 @@ export function HeroSection() {
 						size="lg"
 						className="bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg px-8 py-4 w-full sm:w-auto transform hover:scale-105 transition-all duration-200 min-h-[48px]"
 					>
-						<a href="tel:+16612345678">Book Now</a>
+						<a href="tel:+16618551848">Book Now</a>
 					</Button>
 					<Button
 						asChild

@@ -68,7 +68,7 @@ export function Navigation() {
 								asChild
 								className="bg-primary text-primary-foreground hover:bg-primary/90 transform hover:scale-105 transition-all duration-200 hover:shadow-lg"
 							>
-								<a href="tel:+16612345678">Book Now</a>
+								<a href="tel:+16618551848">Book Now</a>
 							</Button>
 						</div>
 					</div>
@@ -80,7 +80,7 @@ export function Navigation() {
 							size="sm"
 							className="bg-primary text-primary-foreground hover:bg-primary/90 transform hover:scale-105 transition-all duration-200 px-4 py-2 text-sm"
 						>
-							<a href="tel:+16612345678">Book Now</a>
+							<a href="tel:+16618551848">Book Now</a>
 						</Button>
 						<Button
 							variant="ghost"

@@ -30,11 +30,11 @@ export function Footer() {
           >
             <h4 className="text-base sm:text-lg font-semibold text-foreground mb-4">Ready to Book?</h4>
             <a
-              href="tel:+1234567890"
+              href="tel:+16618551848"
               className="inline-flex items-center justify-center space-x-2 text-xl sm:text-2xl font-bold text-primary hover:text-primary/80 transition-all duration-200 transform hover:scale-105 min-h-[48px] px-4 py-2 rounded-lg hover:bg-primary/10"
             >
               <Phone className="h-5 w-5 sm:h-6 sm:w-6" />
-              <span>(123) 456-7890</span>
+              <span>(661) 855-1848</span>
             </a>
           </div>
 
