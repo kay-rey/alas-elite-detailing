@@ -64,8 +64,11 @@ export function Navigation() {
 								Gallery
 								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
 							</a>
-							<Button className="bg-primary text-primary-foreground hover:bg-primary/90 transform hover:scale-105 transition-all duration-200 hover:shadow-lg">
-								Book Now
+							<Button
+								asChild
+								className="bg-primary text-primary-foreground hover:bg-primary/90 transform hover:scale-105 transition-all duration-200 hover:shadow-lg"
+							>
+								<a href="tel:+16612345678">Book Now</a>
 							</Button>
 						</div>
 					</div>
@@ -73,10 +76,11 @@ export function Navigation() {
 					{/* Mobile Navigation */}
 					<div className="md:hidden flex items-center space-x-3">
 						<Button
+							asChild
 							size="sm"
 							className="bg-primary text-primary-foreground hover:bg-primary/90 transform hover:scale-105 transition-all duration-200 px-4 py-2 text-sm"
 						>
-							Book Now
+							<a href="tel:+16612345678">Book Now</a>
 						</Button>
 						<Button
 							variant="ghost"
@@ -109,13 +113,6 @@ export function Navigation() {
 								className="block px-3 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-all duration-200"
 							>
 								Gallery
-							</a>
-							<a
-								href="#contact"
-								onClick={handleLinkClick}
-								className="block px-3 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-all duration-200"
-							>
-								Contact
 							</a>
 						</div>
 					</div>
