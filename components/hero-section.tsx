@@ -47,17 +47,25 @@ export function HeroSection() {
 					}`}
 				>
 					<Button
+						asChild
 						size="lg"
 						className="bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg px-8 py-4 w-full sm:w-auto transform hover:scale-105 transition-all duration-200 min-h-[48px]"
 					>
-						Get a Free Quote
+						<a href="tel:+16612345678">Book Now</a>
 					</Button>
 					<Button
+						asChild
 						size="lg"
 						variant="ghost"
 						className="text-white border-white hover:bg-white/10 text-base sm:text-lg px-8 py-4 w-full sm:w-auto transform hover:scale-105 transition-all duration-200 min-h-[48px]"
 					>
-						View Our Work
+						<a
+							href="https://www.instagram.com/alas_elite_detailing/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							View Our Work
+						</a>
 					</Button>
 				</div>
 			</div>
