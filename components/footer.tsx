@@ -30,11 +30,11 @@ export function Footer() {
           >
             <h4 className="text-base sm:text-lg font-semibold text-foreground mb-4">Ready to Book?</h4>
             <a
-              href="tel:+1234567890"
+              href="tel:+16618551848"
               className="inline-flex items-center justify-center space-x-2 text-xl sm:text-2xl font-bold text-primary hover:text-primary/80 transition-all duration-200 transform hover:scale-105 min-h-[48px] px-4 py-2 rounded-lg hover:bg-primary/10"
             >
               <Phone className="h-5 w-5 sm:h-6 sm:w-6" />
-              <span>(123) 456-7890</span>
+              <span>(661) 855-1848</span>
             </a>
           </div>
 
@@ -46,7 +46,7 @@ export function Footer() {
           >
             <h4 className="text-base sm:text-lg font-semibold text-foreground mb-4">Follow Our Work</h4>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/alas_elite_detailing/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center space-x-2 text-primary hover:text-primary/80 transition-all duration-200 transform hover:scale-105 min-h-[48px] px-4 py-2 rounded-lg hover:bg-primary/10"
@@ -65,6 +65,9 @@ export function Footer() {
         >
           <p className="text-muted-foreground text-sm sm:text-base">
             © 2024 Alas Elite Detailing. All rights reserved.
+          </p>
+          <p className="text-muted-foreground text-sm sm:text-base">
+            <a href="https://kevbreyes.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-all duration-200 transform hover:scale-105">Made by 🐨</a>
           </p>
         </div>
       </div>

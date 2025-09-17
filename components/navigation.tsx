@@ -42,8 +42,7 @@ export function Navigation() {
 							/>
 						</div>
 						<div className="text-lg md:text-xl font-bold text-primary transform hover:scale-105 transition-transform duration-200 cursor-pointer">
-							<span className="hidden sm:inline">Alas Elite Detailing</span>
-							<span className="sm:hidden">Alas Elite</span>
+							<span>Alas Elite Detailing</span>
 						</div>
 					</div>
 
@@ -64,8 +63,11 @@ export function Navigation() {
 								Gallery
 								<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
 							</a>
-							<Button className="bg-primary text-primary-foreground hover:bg-primary/90 transform hover:scale-105 transition-all duration-200 hover:shadow-lg">
-								Book Now
+							<Button
+								asChild
+								className="bg-primary text-primary-foreground hover:bg-primary/90 transform hover:scale-105 transition-all duration-200 hover:shadow-lg"
+							>
+								<a href="tel:+16618551848">Book Now</a>
 							</Button>
 						</div>
 					</div>
@@ -73,10 +75,11 @@ export function Navigation() {
 					{/* Mobile Navigation */}
 					<div className="md:hidden flex items-center space-x-3">
 						<Button
+							asChild
 							size="sm"
 							className="bg-primary text-primary-foreground hover:bg-primary/90 transform hover:scale-105 transition-all duration-200 px-4 py-2 text-sm"
 						>
-							Book Now
+							<a href="tel:+16618551848">Book Now</a>
 						</Button>
 						<Button
 							variant="ghost"
@@ -93,33 +96,31 @@ export function Navigation() {
 					</div>
 				</div>
 
-				{isMobileMenuOpen && (
-					<div className="md:hidden border-t border-border bg-background/95 backdrop-blur w-full">
-						<div className="px-2 pt-2 pb-3 space-y-1 w-full">
-							<a
-								href="#services"
-								onClick={handleLinkClick}
-								className="block px-3 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-all duration-200"
-							>
-								Services
-							</a>
-							<a
-								href="#gallery"
-								onClick={handleLinkClick}
-								className="block px-3 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-all duration-200"
-							>
-								Gallery
-							</a>
-							<a
-								href="#contact"
-								onClick={handleLinkClick}
-								className="block px-3 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-all duration-200"
-							>
-								Contact
-							</a>
-						</div>
+				{/* Mobile Menu - Always rendered but conditionally visible */}
+				<div
+					className={`md:hidden absolute top-full left-0 right-0 border-t border-border bg-background/95 backdrop-blur w-full transition-all duration-300 ease-in-out ${
+						isMobileMenuOpen
+							? "opacity-100 visible translate-y-0"
+							: "opacity-0 invisible -translate-y-2"
+					}`}
+				>
+					<div className="px-2 pt-2 pb-3 space-y-1 w-full">
+						<a
+							href="#services"
+							onClick={handleLinkClick}
+							className="block px-3 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-all duration-200"
+						>
+							Services
+						</a>
+						<a
+							href="#gallery"
+							onClick={handleLinkClick}
+							className="block px-3 py-3 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-all duration-200"
+						>
+							Gallery
+						</a>
 					</div>
-				)}
+				</div>
 			</div>
 		</nav>
 	);

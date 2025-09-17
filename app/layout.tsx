@@ -1,7 +1,8 @@
 import type React from "react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Suspense } from "react";
 import "./globals.css";
 
@@ -20,11 +21,12 @@ export const metadata: Metadata = {
 	description:
 		"Elite mobile auto detailing services. We bring professional car detailing to your location with unmatched excellence.",
 	generator: "v0.app",
-	viewport: {
-		width: "device-width",
-		initialScale: 1,
-		maximumScale: 1,
-	},
+};
+
+export const viewport: Viewport = {
+	width: "device-width",
+	initialScale: 1,
+	maximumScale: 1,
 };
 
 export default function RootLayout({
@@ -39,6 +41,7 @@ export default function RootLayout({
 			>
 				<Suspense fallback={null}>{children}</Suspense>
 				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	);

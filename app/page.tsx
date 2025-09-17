@@ -10,8 +10,8 @@ import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 export default function HomePage() {
 	return (
 		<SmoothScrollProvider>
-			<main className="min-h-screen bg-background">
-				<Navigation />
+			<Navigation />
+			<main className="min-h-screen bg-background overflow-x-hidden">
 				<HeroSection />
 				<ServicesSection />
 				<HowItWorksSection />
