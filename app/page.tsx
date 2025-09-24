@@ -1,24 +1,17 @@
-import { Navigation } from "@/components/navigation";
-import { HeroSection } from "@/components/hero-section";
-import { ServicesSection } from "@/components/services-section";
-import { HowItWorksSection } from "@/components/how-it-works-section";
-import { GallerySection } from "@/components/gallery-section";
-import { ServiceAreaSection } from "@/components/service-area-section";
-import { Footer } from "@/components/footer";
-import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
-
 export default function HomePage() {
 	return (
-		<SmoothScrollProvider>
-			<Navigation />
-			<main className="min-h-screen bg-background overflow-x-hidden">
-				<HeroSection />
-				<ServicesSection />
-				<HowItWorksSection />
-				<GallerySection />
-				<ServiceAreaSection />
-				<Footer />
-			</main>
-		</SmoothScrollProvider>
+		<div className="min-h-screen bg-background flex items-center justify-center">
+			<div className="text-center">
+				{/* Large X */}
+				<div className="text-9xl md:text-[12rem] font-bold text-red-500 mb-8">
+					X
+				</div>
+
+				{/* Unavailable Text */}
+				<div className="text-2xl md:text-4xl font-medium text-muted-foreground">
+					Unavailable
+				</div>
+			</div>
+		</div>
 	);
 }
