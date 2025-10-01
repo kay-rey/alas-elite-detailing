@@ -35,7 +35,7 @@ export function Navigation() {
 					<div className="flex items-center space-x-3">
 						<div className="relative w-12 h-12 md:w-10 md:h-10 transform hover:scale-105 transition-transform duration-200">
 							<Image
-								src="/images/alas-logo.png"
+								src="/images/alaslogo.jpg"
 								alt="Alas Elite Detailing Logo"
 								fill
 								className="object-contain"
