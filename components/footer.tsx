@@ -17,8 +17,7 @@ export function Footer() {
           >
             <h3 className="text-lg sm:text-xl font-bold text-primary mb-4">Alas Elite Detailing</h3>
             <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-              Bringing elite auto detailing services directly to your doorstep. Experience the convenience of
-              professional car care without leaving home.
+              Bringing elite auto detailing services directly to your doorstep. Experience the convenience of professional car care without leaving home.
             </p>
           </div>
 

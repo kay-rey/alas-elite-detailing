@@ -25,15 +25,15 @@ export function HeroSection() {
 			{/* Content */}
 			<div className="relative z-10 text-center px-6 sm:px-8 lg:px-8 max-w-4xl mx-auto">
 				<h1
-					className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance transition-all duration-1000 leading-tight ${
+					className={`text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance transition-all duration-1000 leading-tight ${
 						isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
 					}`}
 				>
-					Elite Detail. Unmatched Excellence.
+					Alas Elite Detailing
 				</h1>
 
 				<p
-					className={`text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto text-pretty transition-all duration-1000 delay-300 leading-relaxed ${
+					className={`text- sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto text-pretty transition-all duration-1000 delay-300 leading-relaxed ${
 						isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
 					}`}
 				>
