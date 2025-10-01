@@ -31,7 +31,7 @@ export function HowItWorksSection() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-card-foreground mb-4">How It Works</h2>
+          <h2 className="text-4xl font-bold text-card-foreground mb-4">How It Works</h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
             Getting your vehicle detailed has never been easier
           </p>
@@ -48,7 +48,7 @@ export function HowItWorksSection() {
                 transitionDelay: `${index * 200 + 200}ms`,
               }}
             >
-              <div className="w-20 h-20 sm:w-16 sm:h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 transform hover:scale-110 transition-all duration-300 hover:shadow-lg animate-pulse">
+              <div className="w-20 h-20 sm:w-16 sm:h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 transform hover:scale-110 transition-all duration-300 hover:shadow-lg">
                 {step.number}
               </div>
               <h3 className="text-lg sm:text-xl font-semibold text-card-foreground mb-4">{step.title}</h3>

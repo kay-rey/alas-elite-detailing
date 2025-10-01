@@ -16,7 +16,7 @@ export function ServiceAreaSection() {
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
             }`}
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-card-foreground mb-6">
+            <h2 className="text-4xl font-bold text-card-foreground mb-6">
               Serving All of Santa Clarita
             </h2>
             <p className="text-muted-foreground mb-8 text-sm sm:text-base leading-relaxed">
