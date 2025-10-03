@@ -34,7 +34,7 @@ export function ServiceAreaSection() {
                     transitionDelay: `${index * 100 + 400}ms`,
                   }}
                 >
-                  <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                  <div className="w-2 h-2 bg-primary rounded-full" />
                   <span className="text-card-foreground font-medium text-sm sm:text-base">{community}</span>
                 </div>
               ))}
