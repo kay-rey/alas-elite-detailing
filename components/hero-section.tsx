@@ -36,12 +36,12 @@ export function HeroSection() {
 				</h1>
 
 				<p
-					className={`text- sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto text-pretty transition-all duration-1000 delay-300 leading-relaxed ${
+					className={`text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto text-pretty transition-all duration-1000 delay-300 leading-relaxed ${
 						isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
 					}`}
 				>
-					Experience premium mobile auto detailing that brings
-					professional-grade results directly to your location.
+					Premium mobile auto detailing in Santa Clarita, CA. We bring
+					professional-grade car detailing directly to your home or office.
 				</p>
 
 				<div
