@@ -54,16 +54,19 @@ export function ServicesDisplay({ services }: ServicesDisplayProps) {
 									? "border-primary md:scale-105 shadow-2xl"
 									: "border-border"
 							} bg-card 
-                transform hover:scale-105 md:hover:scale-110 transition-all duration-300 hover:shadow-2xl
+                transform hover:scale-105 md:hover:scale-110 transition-all duration-200 hover:shadow-2xl
                 ${
 									isVisible
 										? "opacity-100 translate-y-0"
 										: "opacity-0 translate-y-8"
 								}
 							`}
-							style={{
-								transitionDelay: `${index * 200}ms`,
-							}}
+							style={
+								{
+									"--animation-delay": `${index * 200}ms`,
+									transitionDelay: isVisible ? "0ms" : "var(--animation-delay)",
+								} as React.CSSProperties
+							}
 						>
 							{service.popular && (
 								<Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground">
