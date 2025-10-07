@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 export function Navigation() {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -67,7 +67,10 @@ export function Navigation() {
 								asChild
 								className="bg-primary text-primary-foreground hover:bg-primary/90 transform hover:scale-105 transition-all duration-200 hover:shadow-lg"
 							>
-								<a href="tel:+16618551848">Book Now</a>
+								<a href="tel:+16618551848" className="flex items-center gap-2">
+									<Phone className="w-4 h-4" />
+									Book Now
+								</a>
 							</Button>
 						</div>
 					</div>
@@ -79,7 +82,10 @@ export function Navigation() {
 							size="sm"
 							className="bg-primary text-primary-foreground hover:bg-primary/90 transform hover:scale-105 transition-all duration-200 px-4 py-2 text-sm"
 						>
-							<a href="tel:+16618551848">Book Now</a>
+							<a href="tel:+16618551848" className="flex items-center gap-2">
+								<Phone className="w-4 h-4" />
+								Book Now
+							</a>
 						</Button>
 						<Button
 							variant="ghost"
