@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import Link from "next/link";
 
 interface ServiceData {
 	_id: string;
@@ -101,15 +102,17 @@ export function ServicesDisplay({ services }: ServicesDisplayProps) {
 							</CardContent>
 
 							<CardFooter className="px-4 sm:px-6">
-								<Button
-									className={`w-full transform hover:scale-105 transition-all duration-200 min-h-[48px] text-sm sm:text-base ${
-										service.popular
-											? "bg-primary text-primary-foreground hover:bg-primary/90"
-											: "bg-secondary text-secondary-foreground hover:bg-secondary/80"
-									}`}
-								>
-									Book This Package
-								</Button>
+								<Link href="tel:+16618551848" className="w-full">
+									<Button
+										className={`w-full transform hover:scale-105 transition-all duration-200 min-h-[48px] text-sm sm:text-base ${
+											service.popular
+												? "bg-primary text-primary-foreground hover:bg-primary/90"
+												: "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+										}`}
+									>
+										Book This Package
+									</Button>
+								</Link>
 							</CardFooter>
 						</Card>
 					))}
