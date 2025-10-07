@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Instagram, CircleCheck } from "lucide-react";
+import { Phone, Instagram, Check } from "lucide-react";
 
 export function HeroSection() {
 	return (
@@ -93,15 +93,45 @@ export function HeroSection() {
 				{/* Trust Indicators */}
 				<div className="mt-16 flex flex-wrap justify-center items-center gap-8 text-gray-300 animate-slide-up-delay-700 opacity-0">
 					<div className="flex items-center gap-2">
-						<CircleCheck className="w-5 h-5 text-primary" />
+						<svg
+							className="w-5 h-5 text-primary"
+							fill="currentColor"
+							viewBox="0 0 20 20"
+						>
+							<path
+								fillRule="evenodd"
+								d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+								clipRule="evenodd"
+							/>
+						</svg>
 						<span className="text-sm">Fully Insured</span>
 					</div>
 					<div className="flex items-center gap-2">
-						<CircleCheck className="w-5 h-5 text-primary" />
+						<svg
+							className="w-5 h-5 text-primary"
+							fill="currentColor"
+							viewBox="0 0 20 20"
+						>
+							<path
+								fillRule="evenodd"
+								d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+								clipRule="evenodd"
+							/>
+						</svg>
 						<span className="text-sm">5-Star Rated</span>
 					</div>
 					<div className="flex items-center gap-2">
-						<CircleCheck className="w-5 h-5 text-primary" />
+						<svg
+							className="w-5 h-5 text-primary"
+							fill="currentColor"
+							viewBox="0 0 20 20"
+						>
+							<path
+								fillRule="evenodd"
+								d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+								clipRule="evenodd"
+							/>
+						</svg>
 						<span className="text-sm">Mobile Service</span>
 					</div>
 				</div>
