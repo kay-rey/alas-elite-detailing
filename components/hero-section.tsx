@@ -4,8 +4,8 @@ import { Phone, Instagram, Check } from "lucide-react";
 export function HeroSection() {
 	return (
 		<section
-			className="relative flex items-center justify-center overflow-hidden"
-			style={{ minHeight: "calc(100vh - 80px)" }}
+			className="relative flex items-center justify-center overflow-hidden py-8 sm:py-12 lg:py-16"
+			style={{ minHeight: "calc(100vh - 80px)", maxHeight: "100vh" }}
 		>
 			{/* Background Image with Modern Gradient Overlay */}
 			<div
@@ -51,7 +51,7 @@ export function HeroSection() {
 				</h1>
 
 				{/* Subtitle */}
-				<p className="text-xl sm:text-2xl md:text-3xl text-gray-200 mb-12 max-w-3xl mx-auto text-pretty leading-relaxed font-light animate-slide-up-delay-300 opacity-0">
+				<p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-200 mb-6 sm:mb-8 lg:mb-12 max-w-3xl mx-auto text-pretty leading-relaxed font-light animate-slide-up-delay-300 opacity-0">
 					Premium mobile auto detailing that comes to you.
 					<span className="text-primary font-medium">
 						{" "}
