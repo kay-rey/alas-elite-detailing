@@ -22,6 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://alaselitedetailing.com"),
 	title:
 		"Alas Elite Detailing - Premium Mobile Auto Detailing in Santa Clarita, CA",
 	description:
