@@ -54,6 +54,15 @@ export const metadata: Metadata = {
 			"max-snippet": -1,
 		},
 	},
+	icons: {
+		icon: [
+			{ url: "/favicon.ico", sizes: "any" },
+			{ url: "/icon.png", sizes: "32x32", type: "image/jpeg" },
+			{ url: "/icon-192.png", sizes: "192x192", type: "image/jpeg" },
+			{ url: "/icon-512.png", sizes: "512x512", type: "image/jpeg" },
+		],
+		apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/jpeg" }],
+	},
 	openGraph: {
 		type: "website",
 		locale: "en_US",
@@ -63,14 +72,6 @@ export const metadata: Metadata = {
 			"Alas Elite Detailing - Premium Mobile Auto Detailing in Santa Clarita, CA",
 		description:
 			"Professional mobile auto detailing services in Santa Clarita, CA. We bring premium car detailing directly to your home or office. Book now for luxury vehicle care!",
-		images: [
-			{
-				url: "/images/alaslogo.jpg",
-				width: 1200,
-				height: 630,
-				alt: "Alas Elite Detailing - Premium Mobile Auto Detailing Services",
-			},
-		],
 	},
 	twitter: {
 		card: "summary_large_image",
@@ -78,14 +79,10 @@ export const metadata: Metadata = {
 			"Alas Elite Detailing - Premium Mobile Auto Detailing in Santa Clarita, CA",
 		description:
 			"Professional mobile auto detailing services in Santa Clarita, CA. We bring premium car detailing directly to your home or office.",
-		images: ["/images/alaslogo.jpg"],
 		creator: "@alas_elite_detailing",
 	},
 	alternates: {
 		canonical: "https://alaselitedetailing.com",
-	},
-	verification: {
-		google: "your-google-verification-code", // Replace with actual verification code
 	},
 	other: {
 		"geo.region": "US-CA",
