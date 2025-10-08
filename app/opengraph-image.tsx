@@ -25,15 +25,12 @@ export default async function Image() {
 			(
 				<div
 					style={{
-						background: "linear-gradient(135deg, #0F0F0F 0%, #1a1a1a 100%)",
+						background: "#000000",
 						width: "100%",
 						height: "100%",
 						display: "flex",
-						flexDirection: "column",
 						alignItems: "center",
 						justifyContent: "center",
-						padding: "60px",
-						position: "relative",
 					}}
 				>
 					{/* Logo */}
@@ -41,60 +38,9 @@ export default async function Image() {
 						src={logoSrc}
 						alt="Alas Elite Detailing"
 						style={{
-							width: "200px",
-							height: "200px",
+							width: "100%",
+							height: "100%",
 							objectFit: "contain",
-							marginBottom: "40px",
-						}}
-					/>
-
-					{/* Main Title */}
-					<div
-						style={{
-							fontSize: "64px",
-							fontWeight: "bold",
-							color: "#ffffff",
-							textAlign: "center",
-							marginBottom: "20px",
-							lineHeight: 1.1,
-						}}
-					>
-						Alas Elite Detailing
-					</div>
-
-					{/* Subtitle */}
-					<div
-						style={{
-							fontSize: "32px",
-							color: "#3B82F6",
-							textAlign: "center",
-							marginBottom: "20px",
-							fontWeight: "600",
-						}}
-					>
-						Premium Mobile Auto Detailing
-					</div>
-
-					{/* Location */}
-					<div
-						style={{
-							fontSize: "24px",
-							color: "#9CA3AF",
-							textAlign: "center",
-						}}
-					>
-						Santa Clarita, CA
-					</div>
-
-					{/* Accent line */}
-					<div
-						style={{
-							position: "absolute",
-							bottom: "0",
-							left: "0",
-							right: "0",
-							height: "8px",
-							background: "linear-gradient(90deg, #3B82F6 0%, #1D4ED8 100%)",
 						}}
 					/>
 				</div>
@@ -109,45 +55,23 @@ export default async function Image() {
 			(
 				<div
 					style={{
-						background: "linear-gradient(135deg, #0F0F0F 0%, #1a1a1a 100%)",
+						background: "#000000",
 						width: "100%",
 						height: "100%",
 						display: "flex",
-						flexDirection: "column",
 						alignItems: "center",
 						justifyContent: "center",
-						padding: "60px",
 					}}
 				>
 					<div
 						style={{
-							fontSize: "64px",
+							fontSize: "48px",
 							fontWeight: "bold",
-							color: "#ffffff",
+							color: "#3B82F6",
 							textAlign: "center",
-							marginBottom: "20px",
 						}}
 					>
 						Alas Elite Detailing
-					</div>
-					<div
-						style={{
-							fontSize: "32px",
-							color: "#3B82F6",
-							textAlign: "center",
-							marginBottom: "20px",
-						}}
-					>
-						Premium Mobile Auto Detailing
-					</div>
-					<div
-						style={{
-							fontSize: "24px",
-							color: "#9CA3AF",
-							textAlign: "center",
-						}}
-					>
-						Santa Clarita, CA
 					</div>
 				</div>
 			),
