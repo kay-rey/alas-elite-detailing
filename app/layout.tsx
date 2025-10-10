@@ -9,6 +9,7 @@ import {
 	websiteStructuredData,
 	organizationStructuredData,
 } from "@/lib/structured-data";
+import { faqStructuredData } from "@/lib/faq-schema";
 import "./globals.css";
 
 const inter = Inter({
@@ -24,13 +25,13 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
 	metadataBase: new URL("https://alaselitedetailing.com"),
 	title:
-		"Alas Elite Detailing - Premium Mobile Auto Detailing in Santa Clarita, CA",
+		"Alas Elite Detailing - Premium Mobile Auto Detailing in Santa Clarita Valley, CA",
 	description:
-		"Professional mobile auto detailing services in Santa Clarita, CA. We bring premium car detailing directly to your home or office. Book now for luxury vehicle care!",
+		"Professional mobile auto detailing services in Santa Clarita Valley, CA. We bring premium car detailing directly to your home or office. Serving Santa Clarita, Valencia, Canyon Country, Newhall, Saugus, Castaic, Stevenson Ranch, and Agua Dulce. Book now for luxury vehicle care!",
 	keywords: [
 		"mobile auto detailing",
 		"car detailing Santa Clarita",
-		"mobile car wash",
+		"mobile car wash Santa Clarita Valley",
 		"auto detailing CA",
 		"luxury car detailing",
 		"mobile detailing service",
@@ -38,10 +39,25 @@ export const metadata: Metadata = {
 		"professional car detailing",
 		"Santa Clarita detailing",
 		"mobile car detailing service",
+		"Valencia car detailing",
+		"Canyon Country auto detailing",
+		"Newhall mobile detailing",
+		"Saugus car wash",
+		"Castaic auto detailing",
+		"Stevenson Ranch car detailing",
+		"Agua Dulce mobile detailing",
+		"mobile paint correction",
+		"ceramic coating Santa Clarita",
+		"interior detailing mobile",
+		"exterior detailing mobile",
+		"at home car detailing",
+		"office car detailing",
+		"mobile car care",
+		"professional mobile detailing",
 	],
 	generator: "Next.js",
-	authors: [{ name: "Alas Elite Detailing" }],
-	creator: "Alas Elite Detailing",
+	authors: [{ name: "Marvin Alas" }],
+	creator: "Marvin Alas",
 	publisher: "Alas Elite Detailing",
 	robots: {
 		index: true,
@@ -69,17 +85,26 @@ export const metadata: Metadata = {
 		url: "https://alaselitedetailing.com",
 		siteName: "Alas Elite Detailing",
 		title:
-			"Alas Elite Detailing - Premium Mobile Auto Detailing in Santa Clarita, CA",
+			"Alas Elite Detailing - Premium Mobile Auto Detailing in Santa Clarita Valley, CA",
 		description:
-			"Professional mobile auto detailing services in Santa Clarita, CA. We bring premium car detailing directly to your home or office. Book now for luxury vehicle care!",
+			"Professional mobile auto detailing services in Santa Clarita Valley, CA. We bring premium car detailing directly to your home or office. Serving Santa Clarita, Valencia, Canyon Country, Newhall, Saugus, Castaic, Stevenson Ranch, and Agua Dulce. Book now for luxury vehicle care!",
+		images: [
+			{
+				url: "/opengraph-image",
+				width: 1200,
+				height: 630,
+				alt: "Alas Elite Detailing - Premium Mobile Auto Detailing in Santa Clarita Valley, CA",
+			},
+		],
 	},
 	twitter: {
 		card: "summary_large_image",
 		title:
-			"Alas Elite Detailing - Premium Mobile Auto Detailing in Santa Clarita, CA",
+			"Alas Elite Detailing - Premium Mobile Auto Detailing in Santa Clarita Valley, CA",
 		description:
-			"Professional mobile auto detailing services in Santa Clarita, CA. We bring premium car detailing directly to your home or office.",
+			"Professional mobile auto detailing services in Santa Clarita Valley, CA. We bring premium car detailing directly to your home or office. Serving Santa Clarita, Valencia, Canyon Country, Newhall, Saugus, Castaic, Stevenson Ranch, and Agua Dulce.",
 		creator: "@alas_elite_detailing",
+		images: ["/twitter-image"],
 	},
 	alternates: {
 		canonical: "https://alaselitedetailing.com",
@@ -122,6 +147,12 @@ export default function RootLayout({
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{
 						__html: JSON.stringify(organizationStructuredData),
+					}}
+				/>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(faqStructuredData),
 					}}
 				/>
 			</head>

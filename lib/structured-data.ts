@@ -1,15 +1,19 @@
 export const businessStructuredData = {
 	"@context": "https://schema.org",
-	"@type": "AutomotiveBusiness",
+	"@type": ["AutomotiveBusiness", "LocalBusiness"],
 	name: "Alas Elite Detailing",
 	alternateName: "Alas Elite Mobile Detailing",
 	description:
-		"Premium mobile auto detailing services in Santa Clarita, CA. Professional car detailing brought directly to your location.",
+		"Premium mobile auto detailing services in Santa Clarita Valley, CA. Professional car detailing brought directly to your location. Serving Santa Clarita, Valencia, Canyon Country, Newhall, Saugus, Castaic, Stevenson Ranch, and Agua Dulce.",
 	url: "https://alaselitedetailing.com",
 	logo: "https://alaselitedetailing.com/images/alaslogo.jpg",
 	image: "https://alaselitedetailing.com/images/alaslogo.jpg",
 	telephone: "+16618551848",
-	email: "Iris.alas@yahoo.com", // Add your email if you have one
+	email: "Iris.alas@yahoo.com",
+	founder: {
+		"@type": "Person",
+		name: "Marvin Alas",
+	},
 	address: {
 		"@type": "PostalAddress",
 		streetAddress: "Santa Clarita",
@@ -59,6 +63,30 @@ export const businessStructuredData = {
 		{
 			"@type": "City",
 			name: "Saugus",
+			containedInPlace: {
+				"@type": "State",
+				name: "California",
+			},
+		},
+		{
+			"@type": "City",
+			name: "Castaic",
+			containedInPlace: {
+				"@type": "State",
+				name: "California",
+			},
+		},
+		{
+			"@type": "City",
+			name: "Stevenson Ranch",
+			containedInPlace: {
+				"@type": "State",
+				name: "California",
+			},
+		},
+		{
+			"@type": "City",
+			name: "Agua Dulce",
 			containedInPlace: {
 				"@type": "State",
 				name: "California",
@@ -122,7 +150,7 @@ export const businessStructuredData = {
 	aggregateRating: {
 		"@type": "AggregateRating",
 		ratingValue: "5.0",
-		reviewCount: "50",
+		reviewCount: "1",
 		bestRating: "5",
 		worstRating: "1",
 	},
@@ -133,7 +161,13 @@ export const websiteStructuredData = {
 	"@type": "WebSite",
 	url: "https://alaselitedetailing.com",
 	name: "Alas Elite Detailing",
-	description: "Premium mobile auto detailing services in Santa Clarita, CA",
+	description:
+		"Premium mobile auto detailing services in Santa Clarita Valley, CA",
+	potentialAction: {
+		"@type": "SearchAction",
+		target: "https://alaselitedetailing.com/?q={search_term_string}",
+		"query-input": "required name=search_term_string",
+	},
 };
 
 export const organizationStructuredData = {
@@ -142,12 +176,17 @@ export const organizationStructuredData = {
 	name: "Alas Elite Detailing",
 	url: "https://alaselitedetailing.com",
 	logo: "https://alaselitedetailing.com/images/alaslogo.jpg",
+	founder: {
+		"@type": "Person",
+		name: "Marvin Alas",
+	},
 	contactPoint: {
 		"@type": "ContactPoint",
 		telephone: "+16618551848",
 		contactType: "customer service",
-		areaServed: "US",
+		areaServed: ["US", "CA"],
 		availableLanguage: "English",
+		email: "Iris.alas@yahoo.com",
 	},
 	sameAs: ["https://www.instagram.com/alas_elite_detailing/"],
 };
